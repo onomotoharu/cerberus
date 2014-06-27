@@ -3279,7 +3279,7 @@ ul.guides-list {
 }
 
 .hexclip:after {
-  content: url("/images/iconback.png");
+  content: url("http://mekkoo.github.io/cerberus/gh-pages/images/iconback.png");
   position: relative;
   top: -240px;
 }
