@@ -44,7 +44,7 @@ gulp.task('images', function () {
             progressive: true,
             interlaced: true
         })))
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('cerberus.github.io/images'))
         .pipe(reload({stream: true, once: true}))
         .pipe($.size({title: 'images'}));
 });
@@ -106,13 +106,13 @@ gulp.task('html', function () {
         // Minify Any HTML
         .pipe($.minifyHtml())
         // Output Files
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('cerberus.github.io'))
         .pipe($.size({title: 'html'}));
 });
 
 // Clean Output Directory
 gulp.task('clean', function (cb) {
-    rimraf('dist', rimraf.bind({}, '.tmp', cb));
+    rimraf('cerberus.github.io', rimraf.bind({}, '.tmp', cb));
 });
 
 // Watch Files For Changes & Reload
