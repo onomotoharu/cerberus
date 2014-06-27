@@ -44,7 +44,7 @@ gulp.task('images', function () {
             progressive: true,
             interlaced: true
         })))
-        .pipe(gulp.dest('mekkoo.github.io/images'))
+        .pipe(gulp.dest('gh-pages/images'))
         .pipe(reload({stream: true, once: true}))
         .pipe($.size({title: 'images'}));
 });
@@ -106,13 +106,13 @@ gulp.task('html', function () {
         // Minify Any HTML
         .pipe($.minifyHtml())
         // Output Files
-        .pipe(gulp.dest('mekkoo.github.io'))
+        .pipe(gulp.dest('gh-pages'))
         .pipe($.size({title: 'html'}));
 });
 
 // Clean Output Directory
 gulp.task('clean', function (cb) {
-    rimraf('mekkoo.github.io', rimraf.bind({}, '.tmp', cb));
+    rimraf('gh-pages', rimraf.bind({}, '.tmp', cb));
 });
 
 // Watch Files For Changes & Reload
