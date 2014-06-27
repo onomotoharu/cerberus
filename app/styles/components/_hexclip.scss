@@ -1,0 +1,17 @@
+
+.hexclip {
+  width:240px;
+  height:240px;
+}
+
+.hexclip:after {
+  content: url('http://mekkoo.github.io/cerberus/gh-pages/images/iconback.png');
+  position: relative;
+  top:-240px;
+}
+
+.hexclip img {
+  position: relative;
+  //z-index: 0;
+  vertical-align: bottom;
+}

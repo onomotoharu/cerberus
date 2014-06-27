@@ -1,0 +1,65 @@
+body {
+  margin: 0 !important;
+  padding:0 !important;
+}
+
+.cerb {
+  background: $colorGrayDark !important;
+  padding:8px 0;
+
+  .icon-circle--large{
+
+	padding:20px;
+
+	i {
+	  color:red;
+	  font-size:20px;
+	}
+  }
+
+}
+
+.guides-section {
+  margin-top:-30px;
+  padding:0 !important;
+  height:640px;
+}
+
+main {
+  margin: 0 !important;
+  padding:0 !important;
+  max-width:none !important;
+}
+
+ul.guides-list {
+  padding-top:0 !important;
+}
+
+.guides-list__item {
+  background:none;
+  margin-top:0 !important;
+  //background:red !important;
+}
+
+.primary-content {
+  text-align: center;
+
+  h3 {
+	position:relative;
+	bottom:-130px;
+	z-index:999;
+	text-shadow: rgba(255,255,255,1) 0px 0px 16px;
+	a {
+	  text-decoration:none;
+	  font-weight:bold;
+	}
+
+  }
+
+  figure {
+	margin: auto;
+	img {
+	  border: 3px solid #fff !important;
+	}
+  }
+}
